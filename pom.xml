@@ -93,21 +93,25 @@
 		
 	</dependencies>
 	
-	<distributionManagement>
-	
-	    <repository>
-	      <id>nexus</id>
-	      <name>KK FUNDA Releases Nexus Repository</name>
-	      <url>http://13.234.20.220:8081/repository/Release/</url>
-	    </repository>
-	    
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>KK FUNDA Snapshot Nexus Repository </name>
-	      <url>http://13.234.20.220:8081/repository/Snapshot/</url>
-	    </snapshotRepository>
-	    
-	</distributionManagement>
+    <distributionManagement>
+
+		<repository>
+			<id>jfrog</id>
+			<name>JFrog Release Repository</name>
+			<url>
+			https://trialsvwd01.jfrog.io/artifactory/java-libs-release-local
+			</url>
+		</repository>
+		
+		<snapshotRepository>
+			<id>jfrog</id>
+			<name>JFrog Snapshot Repository</name>
+			<url>
+			https://trialsvwd01.jfrog.io/artifactory/java-libs-snapshot-local
+			</url>
+		</snapshotRepository>
+
+   </distributionManagement>
 	
 	<build>
 		<finalName>maven-web-application</finalName>
