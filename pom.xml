@@ -95,21 +95,27 @@
 	
     <distributionManagement>
 
-	    <repository>
-	        <id>jfrog</id>
-	        <url>
-	        https://trialsvwd01.jfrog.io/artifactory/java-libs-release-local
-	        </url>
-	    </repository>
-	
-	    <snapshotRepository>
-	        <id>jfrog</id>
-	        <url>
-	        https://trialsvwd01.jfrog.io/artifactory/java-libs-snapshot-local
-	        </url>
-	    </snapshotRepository>
+    <repository>
+        <id>jfrog</id>
+        <name>JFrog Release Repo</name>
 
-   </distributionManagement>
+        <url>
+        https://trialsvwd01.jfrog.io/artifactory/java-libs-release-local
+        </url>
+
+    </repository>
+
+    <snapshotRepository>
+        <id>jfrog</id>
+        <name>JFrog Snapshot Repo</name>
+
+        <url>
+        https://trialsvwd01.jfrog.io/artifactory/java-libs-snapshot-local
+        </url>
+
+    </snapshotRepository>
+
+</distributionManagement>
 	
 	<build>
 		<finalName>maven-web-application</finalName>
